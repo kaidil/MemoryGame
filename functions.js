@@ -24,7 +24,7 @@ function newBoard(){
 function memoryFlipTile(tile,val){
 	if(tile.innerHTML == "" && memory_values.length < 2){
 		tile.style.background = '#FFF';
-		tile.innerHTML = '<img src="' + val + '.png"/>';
+		tile.innerHTML = '<img src="./images/' + val + '.png"/>';
 		if(memory_values.length == 0){
 			memory_values.push(val);
 			memory_tile_ids.push(tile.id);
@@ -38,7 +38,7 @@ function memoryFlipTile(tile,val){
             	memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array.length){
-					alert("Board cleared... generating new board");
+					alert("You won! Generating new board");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
 				}
@@ -47,15 +47,15 @@ function memoryFlipTile(tile,val){
 				    // Flip the 2 tiles back over
 				    var tile_1 = document.getElementById(memory_tile_ids[0]);
 				    var tile_2 = document.getElementById(memory_tile_ids[1]);
-				    tile_1.style.background = 'url(tile_bg.jpg) no-repeat';
+				    tile_1.style.background = '';
             	    tile_1.innerHTML = "";
-				    tile_2.style.background = 'url(tile_bg.jpg) no-repeat';
+				    tile_2.style.background = '';
             	    tile_2.innerHTML = "";
 				    // Clear both arrays
 				    memory_values = [];
             	    memory_tile_ids = [];
 				}
-				setTimeout(flip2Back, 700);
+				setTimeout(flip2Back, 500);
 			}
 		}
 	}
