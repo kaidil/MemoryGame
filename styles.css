@@ -1,6 +1,8 @@
 div#memory_board{
 	background:#CCC;
 	border:#999 1px solid;
+	position: relative;
+	top: 150px;
 	width:800px;
 	height:540px;
 	padding:24px;
