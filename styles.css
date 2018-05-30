@@ -2,7 +2,7 @@ div#memory_board{
 	background:#CCC;
 	border:#999 1px solid;
 	position: relative;
-	top: 150px;
+	top: 10%;
 	width:800px;
 	height:540px;
 	padding:24px;
@@ -20,4 +20,10 @@ div#memory_board > div{
 	font-size:64px;
 	cursor:pointer;
 	text-align:center;
+}
+span#klicks{
+	color: black;
+	padding-top: 40%;
+	font-size: large;
+	font-weight: 900;
 }
