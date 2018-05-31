@@ -37,6 +37,11 @@ function newBoard(){
     document.getElementById('memory_board').innerHTML = output;
 }
 
+
+
+
+
+
 // F-n uue kaardilaua loomiseks
 function memoryFlipTile(tile,val){
     total_clicks++;
@@ -59,9 +64,7 @@ function memoryFlipTile(tile,val){
                 // Check to see if the whole board is cleared
                 if(tiles_flipped == memory_array.length){   // kotroll, kas kas kõik kaardid avatud, kui jah, siis uus laud
                     score = (24 / total_clicks) * 100;
-                    alert("Oled võitnud! Sinu skoor on: " + Math.round(score));
-                    document.getElementById('memory_board').innerHTML = "";
-                    newBoard();
+                    newGame();
                 }
             } else {    // kui kasutaja ei saanud paari, siis jätkub kood siit
                 function flip2Back(){
@@ -81,6 +84,19 @@ function memoryFlipTile(tile,val){
         }
     }
 }
+
+function newGame(){
+	var answer;
+	if(confirm("Võitsid!:) Kas soovid veel mängida?")){
+		newBoard();
+	} else {
+		txt = "Sinu skoor on: " + Math.round(score);
+	}
+	document.getElementById('memory_board').innerHTML = txt;
+	document.getElementById('memory_board').style.fontSize = "xx-large";
+	document.getElementById('memory_board').style.textAlign = "center";
+}
+
 
 window.onload = function(){
     registerServiceWorker();
