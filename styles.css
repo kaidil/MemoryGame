@@ -27,3 +27,8 @@ span#klicks{
 	font-size: large;
 	font-weight: 900;
 }
+@media screen and (min-width: 480px) {
+	body {
+		background-color: white;
+	}
+} 
