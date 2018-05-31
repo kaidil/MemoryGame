@@ -11,3 +11,4 @@ Lisaks sellele toimub ka punktiarvestus, kus arvestatkse tehtud käikude arvu. M
 Mängu lõpus kuvatakse punktid ekraanile, neid ei salvestata.
 
 Mängu ekraanitõmmis pärast kaartide avamist: ![Screenshot 1](MemoryGame.png "Rakenduse ekraanipilt lõpus")
+Mängu tutvustav video: https://youtu.be/QVMkTFWbl48
