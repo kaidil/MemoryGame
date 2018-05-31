@@ -29,6 +29,6 @@ span#klicks{
 }
 @media screen and (min-width: 480px) {
 	body {
-		background-color: white;
+		background-color: grey;
 	}
 } 
